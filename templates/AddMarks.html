@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grading System</title>
+    <link rel="stylesheet" href="static/AddMarks.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#marks-section">Student Details</a></li>
+            <li><a href="#display-section">Display</a></li>
+        </ul>
+    </div>
+
+    <div class="container grading-container" id="marks-section">
+        <h2>Student Details</h2>
+        <form id="marks-form">
+            <div class="input-field">
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" placeholder="Enter Student Name" required>
+            </div>
+            <div class="input-field">
+                <label for="usn">USN:</label>
+                <input type="text" id="usn" placeholder="Enter USN" required>
+            </div>
+            <div class="input-field">
+                <label for="data-structures">Data Structures:</label>
+                <input type="number" id="data-structures" placeholder="Enter Marks" required>
+            </div>
+            <div class="input-field">
+                <label for="operating-system">Operating System:</label>
+                <input type="number" id="operating-system" placeholder="Enter Marks" required>
+            </div>
+            <div class="input-field">
+                <label for="unix">Unix:</label>
+                <input type="number" id="unix" placeholder="Enter Marks" required>
+            </div>
+            <div class="input-field">
+                <label for="maths">Maths:</label>
+                <input type="number" id="maths" placeholder="Enter Marks" required>
+            </div>
+            <div class="input-field">
+                <label for="microcontroller">Microcontroller:</label>
+                <input type="number" id="microcontroller" placeholder="Enter Marks" required>
+            </div>
+            <button type="submit" class="add-button">Add</button>
+        </form>
+    </div>
+
+    <div class="container display-container" id="display-section">
+        <h2>Display</h2>
+        <table id="marks-table">
+            <tr>
+                <th>Name</th>
+                <th>USN</th>
+                <th>Data Structures</th>
+                <th>Operating System</th>
+                <th>UNIX</th>
+                <th>Maths</th>
+                <th>Microcontroller</th>
+                <th>Average</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="static/AddMarks.js"></script>
+</body>
+</html>

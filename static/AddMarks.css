@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container.grading-container {
+    margin-top: 100px; /* Add top margin to grading container */
+    margin-bottom: 40px;
+}
+/* Purple Nav Bar */
+.navbar {
+    background: rgb(77,15,119);
+    background: linear-gradient(90deg, rgba(77,15,119,0.5220938717283788) 0%, rgba(58,128,66,1) 18%, rgba(4,39,23,0.7629902302717962) 100%);
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 20;
+    z-index: 100; /* Ensures the navbar is above other elements */
+    backdrop-filter: blur(5px); /* Adds a blur effect (requires a modern browser) */
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.navbar li {
+    margin: 0 10px;
+    display: inline;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px; /* Add padding to the buttons */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.navbar li a:hover {
+    /* Your existing styles... */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+    transform: scale(1.05);
+}
+
+
+/* Three Separate Containers */
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    flex: 1;
+    font-size: 18px;
+}
+
+.input-field input {
+    flex: 3;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.add-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1abc9c;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.add-button:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+#marks-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#marks-table th, #marks-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#marks-table th:last-child, #marks-table td:last-child {
+    border-right: none;
+}
+
+#marks-table th {
+    background-color: #f2f2f2;
+}
